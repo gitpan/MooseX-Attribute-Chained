@@ -1,0 +1,207 @@
+---
+abstract: 'Attribute that returns the instance to allow for chaining'
+author:
+  - 'Moritz Onken <onken@netcubed.de>'
+  - 'David McLaughlin <david@dmclaughlin.com>'
+build_requires:
+  Module::Build: 0.3601
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: MooseX-Attribute-Chained
+provides:
+  Moose::Meta::Attribute::Custom::Trait::Chained:
+    file: lib/Moose/Meta/Attribute/Custom/Trait/Chained.pm
+    version: v1.0.1
+  MooseX::Attribute::Chained:
+    file: lib/MooseX/Attribute/Chained.pm
+    version: v1.0.1
+  MooseX::Attribute::Chained::Method::Accessor:
+    file: lib/MooseX/Attribute/Chained.pm
+    version: v1.0.1
+  MooseX::Attribute::ChainedClone:
+    file: lib/MooseX/Attribute/ChainedClone.pm
+    version: v1.0.1
+  MooseX::Attribute::ChainedClone::Method::Accessor:
+    file: lib/MooseX/Attribute/ChainedClone.pm
+    version: v1.0.1
+  MooseX::ChainedAccessors:
+    file: lib/MooseX/ChainedAccessors.pm
+    version: v1.0.1
+  MooseX::ChainedAccessors::Accessor:
+    file: lib/MooseX/ChainedAccessors/Accessor.pm
+    version: v1.0.1
+  MooseX::Traits::Attribute::Chained:
+    file: lib/MooseX/Traits/Attribute/Chained.pm
+    version: v1.0.1
+  MooseX::Traits::Attribute::ChainedClone:
+    file: lib/MooseX/Attribute/ChainedClone.pm
+    version: v1.0.1
+requires:
+  Moose: 0
+  Test::More: 0.88
+  Try::Tiny: 0
+resources:
+  bugtracker: https://github.com/monken/p5-moosex-chainedaccessors/issues
+  repository: git://github.com/monken/p5-moosex-chainedaccessors.git
+version: 1.0.1
+x_Dist_Zilla:
+  plugins:
+    -
+      class: Dist::Zilla::Plugin::Prereqs
+      config:
+        Dist::Zilla::Plugin::Prereqs:
+          phase: runtime
+          type: requires
+      name: Prereqs
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::GatherDir
+      name: GatherDir
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::Test::Compile
+      name: Test::Compile
+      version: 1.112820
+    -
+      class: Dist::Zilla::Plugin::HasVersionTests
+      name: HasVersionTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::KwaliteeTests
+      name: KwaliteeTests
+      version: 1.101420
+    -
+      class: Dist::Zilla::Plugin::Test::MinimumVersion
+      name: Test::MinimumVersion
+      version: 2.0.1
+    -
+      class: Dist::Zilla::Plugin::PodCoverageTests
+      name: PodCoverageTests
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::PodSyntaxTests
+      name: PodSyntaxTests
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::ReportVersions::Tiny
+      name: ReportVersions::Tiny
+      version: 1.03
+    -
+      class: Dist::Zilla::Plugin::PruneCruft
+      name: PruneCruft
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::PruneFiles
+      name: PruneFiles
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::ManifestSkip
+      name: ManifestSkip
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::ExtraTests
+      name: ExtraTests
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::NextRelease
+      name: NextRelease
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::PkgVersion
+      name: PkgVersion
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::PodWeaver
+      name: PodWeaver
+      version: 3.101641
+    -
+      class: Dist::Zilla::Plugin::Prepender
+      name: Prepender
+      version: 1.112280
+    -
+      class: Dist::Zilla::Plugin::ExecDir
+      name: ExecDir
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::ShareDir
+      name: ShareDir
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::Bugtracker
+      name: Bugtracker
+      version: 1.111080
+    -
+      class: Dist::Zilla::Plugin::Repository
+      name: Repository
+      version: 0.18
+    -
+      class: Dist::Zilla::Plugin::MetaProvides::Package
+      name: MetaProvides::Package
+      version: 1.12060501
+    -
+      class: Dist::Zilla::Plugin::MetaConfig
+      name: MetaConfig
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::License
+      name: License
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::ModuleBuild
+      name: ModuleBuild
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::MetaYAML
+      name: MetaYAML
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::MetaJSON
+      name: MetaJSON
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::Readme
+      name: Readme
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::Manifest
+      name: Manifest
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::CheckChangeLog
+      name: CheckChangeLog
+      version: 0.01
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':InstallModules'
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':IncModules'
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':TestFiles'
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ExecFiles'
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':ShareFiles'
+      version: 4.300006
+    -
+      class: Dist::Zilla::Plugin::FinderCode
+      name: ':MainModule'
+      version: 4.300006
+  zilla:
+    class: Dist::Zilla::Dist::Builder
+    config:
+      is_trial: 0
+    version: 4.300006

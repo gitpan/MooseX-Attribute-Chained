@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution MooseX-Attribute-Chained,
+version 1.0.1:
+
+  Attribute that returns the instance to allow for chaining
+
+This software is copyright (c) 2012 by Moritz Onken.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
